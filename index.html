@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="_scripts/angular.min.js"></script>
+    <script src="_scripts/angular-route.min.js"></script>
+    <script src="_scripts/MyApp.js"></script>
+    <script src="_scripts/ctrls.js"></script>
+    <link href="_css/style1.css" rel="stylesheet" type="text/css" />
+    <script src="_scripts/json.js" type="text/javascript"></script>
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- פעיל את הקונפיג של האפליקציה והיא כבר יודעת לבצע את הפעולות הנכונות -->
+    <div class="all_site" ng-view>
+        <header>
+            <a href="addon/list.html">List</a>
+            <a href="addon/detail.html">Detail</a>
+        </header>
+        <div class="container" ng-view></div>
+
+        <!-- <div class="search">
+            <label>search series:</label>
+            <input type="text" ng-model="search_query">
+            <label Order by:></label>
+            <select ng-model="order_query">
+                <option value="name"> name</option>
+                <option value="views"> views</option>   
+                <option value="seasons"> seasons</option>
+            </select>
+            reverse <input type="checkbox" ng-model="reverse_query" value="reverse">
+        </div> -->
+    </div>
+
+
+    <!-- <h1>welcome to Angular</h1>
+    <input type="text" ng-model="input_name">
+    <h3>welcome {{ input_name }}</h3> -->
+</body>
+
+</html>
