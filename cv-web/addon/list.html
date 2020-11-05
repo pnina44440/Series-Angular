@@ -1,0 +1,14 @@
+<div class="box" ng-repeat="item in series | filter: search_query | orderBy : order_query : reverse_query">
+    <img ng-src="_images/{{ item.image}}">
+    <h3 strong>
+        {{item.name}}
+    </h3>
+    <article>
+
+        <strong> Seasons :</strong>{{item.seasons}}
+        <br>
+
+        <strong> Views :</strong>{{item.views}}
+    </article>
+
+</div>
